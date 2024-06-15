@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.moon {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url(./moon.jpg);
+    animation: cosmo 15s infinite linear;
+    box-shadow: 1px 1px 30px 20px rgba(0, 0, 0, 0.505) inset;
+}
+
+body {
+    background-image: url(./cosmo.avif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: cosmo 4s infinite linear;
+}
+
+
+
+
+@keyframes cosmo {
+    from {
+        background-position: left;
+    }
+
+    to {
+        background-position: right;
+    }
+}
